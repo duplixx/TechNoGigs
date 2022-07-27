@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px ;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo
+{
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 600;
+}
+header .logo:hover{
+  font-size: 2rem;
+  background:url(https://t.me/tech_no_gigs);
+  transition-duration: 300ms;
+
+}
+
+
+.toggle.active
+{
+  background: url();
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase
+{
+  position:relative;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #60caff;
+  mix-blend-mode:overlay;
+}
+.text
+{
+  position: relative;
+  z-index: 1;
+  top: 50px;
+}
+
+.text h2
+{
+  position: relative;
+  font-size: 5em;
+  font-weight: 800;
+  color: rgb(238, 238, 238);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  position: relative;
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: 400;
+  max-width:500px;
+  letter-spacing: 2px;
+}
+.text a
+{
+  position: relative;
+  margin: auto auto 0 auto;
+  font-size: 1.5em;
+  padding: 10px 35px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  transition: 0.3s;
+  border-radius: 1rem;
+  background: rgb(195,34,138);
+  background: linear-gradient(184deg, rgba(195,34,138,1) 20%, rgba(255,0,0,1) 81%);
+  border-color: white;
+  border-width: 2px;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+
+
+
+.social li
+{
+  list-style:none;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+}
+.social li a
+{
+  display:inline-block;
+  filter: invert(1);
+  transform: scale(0.7);
+  transition: 0.5s;
+}
+  
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+
